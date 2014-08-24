@@ -1,0 +1,81 @@
+/* ==========================================================================
+   Grid.
+   ========================================================================== */
+
+#grid {
+    width: 100%;
+    margin: 4em 0 0 0;
+    @media only screen and (max-width: 800px) { 
+		margin: 0;
+    }
+}
+
+.col { /* For Project and Work */
+    width: 33.3333333333333%;
+    height: auto;
+    float: left;
+    display: block;
+    margin: 0 0 2em 0;
+    @media only screen and (max-width: 800px) { 
+		width: 50%;
+        float: left;
+        padding: 0 0 0 0;
+        margin: 0 0 2em 0;
+        display: block;
+    }
+}
+
+.col2 { /* For Project Pages */
+    width: 65%;
+    float: left;
+    padding: 4em 0 0 0;
+    @media only screen and (max-width: 800px) { 
+		width: 50%;
+        display: block;
+        float: none;
+        padding: 20em 0 0 0;
+    }
+}
+
+.col3 {
+    width: 33.3333333333333%;
+    height: auto;
+    float: left;
+    display: block;
+    margin: 2.2em 0 2em 0;
+    @media only screen and (max-width: 800px) { 
+		width: 75%;
+        float: left;
+        padding: 0 0 2em 0;
+        margin: 2em 2em 0;
+        display: block;
+    }
+}
+
+.col4 {
+    width: 65%;
+    display: block;
+    float: left;
+    padding: 12em 6.4em 0 3em;
+    @media only screen and (max-width: 800px) { 
+		width: 80%;
+        display: block;
+        float: none;
+        padding: 18em 0 0 0;
+        margin: 0 auto; 
+    }
+}
+
+.col3 h2 {
+    padding: 2.2em 0 0 0.4em;
+    color: #fff;
+}
+
+.col4 p {
+    font-family: $body_copy, monospace;
+    padding: 0 0 0 0;
+    color: #fff;
+    @media only screen and (max-width: 800px) { 
+		margin: 0 0 2em 0;
+    }
+}

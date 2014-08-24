@@ -1,4 +1,65 @@
 /* ==========================================================================
    Typography
    ========================================================================== */
+
+/* Variables.
+   ========================================================================== */
 $headlines: 'FaktPro-SemiBold', sans-serif;
+
+$body_copy: 'gt_pressura_mono_regular', sans-serif;
+
+
+/* Rules
+   ========================================================================== */
+h1,h2,h3,h4,h5,h6 {
+	font-family: $headlines;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+}
+
+h1 {
+    font-size: 20em;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    line-height: 0.98;
+    
+}
+
+h2 {
+    font-size: 4.8em;
+    margin: 0; 
+    padding: 0.8em 0 0 0;
+    line-height: 0.89;
+}
+
+.work h2 {
+    margin: 0 0 0.2em 0;
+    padding: 0 0 0.12em 0.2em;
+}
+
+h3 {
+    font-size: 2.6em;
+}
+
+h4 {
+    font-size: 2.4em;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2;
+}
+
+h5 {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2;
+    color: #fff;
+}
+
+p {
+    font-family: $body_copy;
+    font-size: 1.2em;
+    margin: 0 0 1.4em 0;
+    padding: 1.2em 0 0 0;
+    line-height: 1.6;
+}

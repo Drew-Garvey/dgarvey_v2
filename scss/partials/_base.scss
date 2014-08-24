@@ -4,61 +4,12 @@
 
 body {
     background-color: #fff;
-    font-family: 'gt_pressura_mono_regular', monospace;
+    font-family: $body_copy, monospace;
     color: #006699;
     margin: 0;
     padding: 0;
 }
 
-h1 {
-    font-family: 'FaktPro-SemiBold', sans-serif;
-    font-size: 20em;
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
-    line-height: 0.98;
-    text-rendering: optimizeLegibility;
-}
-
-h2 {
-    font-family: 'FaktPro-SemiBold', sans-serif;
-    font-size: 4.8em;
-    margin: 0; 
-    padding: 0.8em 0 0 0;
-    line-height: 0.89;
-    text-rendering: optimizeLegibility;
-}
-
-h3 {
-    font-family: 'FaktPro-SemiBold', sans-serif;
-    font-size: 2.6em;
-}
-
-h4 {
-    font-family: 'FaktPro-SemiBold', sans-serif;
-    font-size: 2.4em;
-    margin: 0;
-    padding: 0;
-    text-rendering: optimizeLegibility;
-    letter-spacing: 2;
-}
-
-h5 {
-    font-family: 'FaktPro-SemiBold', sans-serif;
-    font-size: 1.2em;
-    margin: 0;
-    padding: 0;
-    text-rendering: optimizeLegibility;
-    letter-spacing: 2;
-    color: #fff;
-}
-
-p {
-    font-family: 'gt_pressura_mono_regular', sans-serif;
-    font-size: 1.2em;
-    margin: 0 0 1.4em 0;
-    padding: 1.2em 0 0 0;
-    line-height: 1.6;
-}
 
 a {
     color: #006699;
@@ -122,15 +73,255 @@ header {
     width: 100%;
     height: 6.8em;
     top: 0;
-    background-color: #fff;
+    background-color: $white;
     margin: 0 0 0 0;
     padding-right: 1.2em;
     padding-left: 0.8em;
 }
 
+#projects {
+    background: $white 50% 0 no-repeat;
+    position: absolute;
+    margin: 0 auto;
+    z-index: 400;
+}
+
+/* ==========================================================================
+   Nav.
+   ========================================================================== */
+
 nav {
     overflow: center;
 }
+
+.middle {
+    padding-left: 20%;
+}
+
+
+/* .right {
+    margin: 0 0 0 0;
+    float: left;
+} */
+
+.right {
+    float: right;
+}
+
+.right ul {
+    text-align: right;
+    margin: 0 auto;
+    float: right;
+}
+
+.right li {
+    font-size: 1.2em;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0.4em 2em 0 0;
+}
+
+.right li a:hover {
+    border-bottom: 4px solid $brand_blue;
+}
+
+.right li:last-of-type {
+    padding: 0 0 0 0;
+}
+
+.last {
+    margin-bottom: 2em;
+}
+
+.line {
+    border-bottom: 8px solid;
+}
+
+/* .line2 {
+    border-bottom: 2px dotted;
+    width: 100%;
+    padding: 0 0 0 0;
+} */
+
+#projects {
+    background: $white 50% 0 no-repeat;
+    position: absolute;
+    margin: 0 auto;
+    z-index: 400;   
+}
+
+
+.work h2 {
+    margin: 0 0 0.2em 0;
+    padding: 0 0 0.12em 0.2em;
+}
+
+/* ==========================================================================
+   Containment.
+   ========================================================================== */
+#container {
+    width: 100%;
+}
+
+#home {
+    background: $brand_blue 50% 0 repeat fixed;
+    position: relative;
+    min-height: 600px;
+    margin: 1.8em auto;
+    padding: 0;
+    /* width: 88%; */
+    z-index: 2;
+}
+
+#contentarea {
+    background: $brand_blue 50% 0 repeat fixed;
+    position: relative;
+    min-height: 600px;
+    margin: 0 auto;
+    padding: 0;
+    /* width: 88%; */
+    z-index: 2;
+}
+
+#home a:hover {
+    border: none;
+    text-decoration: none;
+}
+
+
+/* ==========================================================================
+   Title.
+   ========================================================================== */
+.title {
+    font-family: $headlines;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 0 0 0 0;
+    margin: 0.2em 0 0 0;
+    line-height: 0.86;
+    text-rendering: optimizeLegibility;
+    display: block;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+.title h2 {
+    font-size: 2.2em;
+    margin: 13% 0 0 0;
+    color: #fff;
+}
+
+.title p {
+    font-size: 1em;
+    color: #fff;
+    width: 80%;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+
+/* ==========================================================================
+   About Me
+   ========================================================================== */
+.about {
+    width: 98%;
+    margin: 0 auto;
+}
+
+.about ul {
+    display: block;
+    clear: both;
+}
+
+.about-me {
+    position: absolute;
+    top: 4.2em;
+    width: 80%;
+    font-size: 1.6em;
+    color: #fff;
+    padding: 0 0 0 2em;
+    margin: 0;
+}
+
+/* ==========================================================================
+   Back Buttons
+   ========================================================================== */
+.back {
+    font-family: $headlines;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+.end {
+    margin-right: 0;
+}
+
+.buttonleft {
+    width: 50%;
+    height: 2em;
+    display: block;
+    font-size: 4em;
+    float: left;
+}
+
+.buttonright {
+    width: 50%;
+    height: 2em;
+    display: block;
+    font-size: 4em;
+    float: right;
+}
+
+.buttoncenter {
+    width: 100%;
+    height: 2em;
+    display: block;
+    font-size: 4em;
+}
+
+.buttoncenter a {
+    display: block;
+    margin: 0 auto;
+    padding: 0.4em 0 0 0;
+}
+
+.buttoncenter :hover {
+    color: #fff;
+    background-color: #006699;
+    width: 100%;
+    height: 100%;
+}
+
+.buttonleft a {
+    padding: 0.34em 0 0 0;
+    display: block;
+}
+
+.buttonright a {
+    padding: 0.34em 0 0 0;
+    display: block;
+}
+
+
+.buttonleft :hover {
+    color: #fff;
+    background-color: #006699;
+    width: 100%;
+    height: 100%;
+}
+
+.buttonright :hover {
+    color: #fff;
+    background-color: #006699;
+    width: 100%;
+    height: 100%;
+}
+
+/* ==========================================================================
+   Footer.
+   ========================================================================== */
 
 footer {
     background: #006699 50% 0 repeat fixed;
