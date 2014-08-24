@@ -139,7 +139,8 @@ p {
   font-size: 1.2em;
   margin: 0 0 1.4em 0;
   padding: 1.2em 0 0 0;
-  line-height: 1.6; }
+  line-height: 1.6;
+  font-weight: normal; }
 
 /* ==========================================================================
    Grid.
@@ -221,7 +222,7 @@ p {
    Base Styles
    ========================================================================== */
 body {
-  background-color: #fff;
+  background-color: white;
   font-family: "gt_pressura_mono_regular", sans-serif, monospace;
   color: #006699;
   margin: 0;
@@ -232,7 +233,7 @@ a {
   text-decoration: none; }
 
 a:hover {
-  border-bottom: solid 4px #fff; }
+  border-bottom: solid 4px white; }
 
 ul {
   margin: 0;
@@ -390,11 +391,11 @@ nav {
 .title h2 {
   font-size: 2.2em;
   margin: 13% 0 0 0;
-  color: #fff; }
+  color: white; }
 
 .title p {
   font-size: 1em;
-  color: #fff;
+  color: white;
   width: 80%;
   margin: 0 auto;
   display: inline-block; }
@@ -499,7 +500,7 @@ footer .col3 {
   padding: 0 0 0 1.2em; }
 
 footer h4 {
-  color: #fff; }
+  color: white; }
 
 footer h5 {
   margin: 0.8em 0 0 0; }
@@ -511,7 +512,7 @@ footer li {
   padding: 0 1.2em 0 0; }
 
 footer a {
-  color: #fff;
+  color: white;
   text-decoration: none; }
 
 footer span {

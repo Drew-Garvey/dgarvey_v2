@@ -3,7 +3,7 @@
    ========================================================================== */
 
 body {
-    background-color: #fff;
+    background-color: $white;
     font-family: $body_copy, monospace;
     color: #006699;
     margin: 0;
@@ -17,7 +17,7 @@ a {
 } 
 
 a:hover {
-    border-bottom: solid 4px #fff;
+    border-bottom: solid 4px $white;
 }
 
 ul {
@@ -52,7 +52,7 @@ figcaption {
 }
 
 figcaption span:hover {
-    border-bottom: 4px solid #006699;
+    border-bottom: 4px solid $brand_blue;
 }
 
 caption {
@@ -209,12 +209,12 @@ nav {
 .title h2 {
     font-size: 2.2em;
     margin: 13% 0 0 0;
-    color: #fff;
+    color: $white;
 }
 
 .title p {
     font-size: 1em;
-    color: #fff;
+    color: $white;
     width: 80%;
     margin: 0 auto;
     display: inline-block;
@@ -289,7 +289,7 @@ nav {
 
 .buttoncenter :hover {
     color: #fff;
-    background-color: #006699;
+    background-color: $brand_blue;
     width: 100%;
     height: 100%;
 }
@@ -307,14 +307,14 @@ nav {
 
 .buttonleft :hover {
     color: #fff;
-    background-color: #006699;
+    background-color: $brand_blue;
     width: 100%;
     height: 100%;
 }
 
 .buttonright :hover {
     color: #fff;
-    background-color: #006699;
+    background-color: $brand_blue;
     width: 100%;
     height: 100%;
 }
@@ -324,7 +324,7 @@ nav {
    ========================================================================== */
 
 footer {
-    background: #006699 50% 0 repeat fixed;
+    background: $brand_blue 50% 0 repeat fixed;
     position: relative;
     display: block;
     width: 100%;
@@ -339,7 +339,7 @@ footer .col3 {
 }
 
 footer h4 {
-    color: #fff;
+    color: $white;
 }
 
 footer h5 {
@@ -354,7 +354,7 @@ footer li {
 }
 
 footer a {
-    color: #fff;
+    color: $white;
     text-decoration: none;
 }
 
