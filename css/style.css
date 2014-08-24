@@ -1,3 +1,6 @@
+/* ==========================================================================
+   Partials
+   ========================================================================== */
 /*
 * HTML5 Boilerplate
 *
@@ -5,1046 +8,247 @@
 * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
 * Kroc Camen, and the H5BP dev community and team.
 */
-
 /* ==========================================================================
 Base styles: opinionated defaults
 ========================================================================== */
-
 html,
 button,
 input,
 select,
 textarea {
-    color: #222;
-}
+  color: #222; }
+
+html {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 body {
-    font-size: 1em;
-    line-height: 1.4;
-}
+  font-size: 1em;
+  line-height: 1.4; }
 
 /*
 * Remove text-shadow in selection highlight: h5bp.com/i
 * These selection rule sets have to be separate.
 * Customize the background color to match your design.
 */
-
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
+  background: #b3d4fc;
+  text-shadow: none; }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
+  background: #b3d4fc;
+  text-shadow: none; }
 
 /*
 * A better looking default horizontal rule
 */
-
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
 
 /*
 * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
 */
-
 img {
-    vertical-align: middle;
-}
+  vertical-align: middle; }
 
 /*
 * Remove default fieldset styles.
 */
-
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
+  border: 0;
+  margin: 0;
+  padding: 0; }
 
 /*
 * Allow only vertical resizing of textareas.
 */
-
 textarea {
-    resize: vertical;
-}
+  resize: vertical; }
 
 /* ==========================================================================
 Chrome Frame prompt
 ========================================================================== */
-
 .chromeframe {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
 
 /* ==========================================================================
-Drew's custom styles
-========================================================================== */
-
-
-
-
-/****************************************
-
-    Base Janks
-
-****************************************/
-
-html {
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-}
-
-* { 
-    -moz-box-sizing: border-box; 
-    -webkit-box-sizing: border-box; 
-    box-sizing: border-box; 
-}
-
+   Typography
+   ========================================================================== */
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
 body {
-    background-color: #fff;
-    font-family: 'gt_pressura_mono_regular', monospace;
-    color: #006699;
-    margin: 0;
-    padding: 0;
-}
+  background-color: #fff;
+  font-family: 'gt_pressura_mono_regular', monospace;
+  color: #006699;
+  margin: 0;
+  padding: 0; }
 
 h1 {
-    font-family: 'FaktPro-SemiBold', sans-serif;
-    font-size: 20em;
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
-    line-height: 0.98;
-    text-rendering: optimizeLegibility;
-}
+  font-family: 'FaktPro-SemiBold', sans-serif;
+  font-size: 20em;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  line-height: 0.98;
+  text-rendering: optimizeLegibility; }
 
 h2 {
-    font-family: 'FaktPro-SemiBold', sans-serif;
-    font-size: 4.8em;
-    margin: 0; 
-    padding: 0.8em 0 0 0;
-    line-height: 0.89;
-    text-rendering: optimizeLegibility;
-}
+  font-family: 'FaktPro-SemiBold', sans-serif;
+  font-size: 4.8em;
+  margin: 0;
+  padding: 0.8em 0 0 0;
+  line-height: 0.89;
+  text-rendering: optimizeLegibility; }
 
 h3 {
-    font-family: 'FaktPro-SemiBold', sans-serif;
-    font-size: 2.6em;
-}
+  font-family: 'FaktPro-SemiBold', sans-serif;
+  font-size: 2.6em; }
 
 h4 {
-    font-family: 'FaktPro-SemiBold', sans-serif;
-    font-size: 2.4em;
-    margin: 0;
-    padding: 0;
-    text-rendering: optimizeLegibility;
-    letter-spacing: 2;
-}
+  font-family: 'FaktPro-SemiBold', sans-serif;
+  font-size: 2.4em;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 2; }
 
 h5 {
-    font-family: 'FaktPro-SemiBold', sans-serif;
-    font-size: 1.2em;
-    margin: 0;
-    padding: 0;
-    text-rendering: optimizeLegibility;
-    letter-spacing: 2;
-    color: #fff;
-}
+  font-family: 'FaktPro-SemiBold', sans-serif;
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 2;
+  color: #fff; }
 
 p {
-    font-family: 'gt_pressura_mono_regular', sans-serif;
-    font-size: 1.2em;
-    margin: 0 0 1.4em 0;
-    padding: 1.2em 0 0 0;
-    line-height: 1.6;
-}
+  font-family: 'gt_pressura_mono_regular', sans-serif;
+  font-size: 1.2em;
+  margin: 0 0 1.4em 0;
+  padding: 1.2em 0 0 0;
+  line-height: 1.6; }
 
 a {
-    color: #006699;
-    text-decoration: none;
-} 
+  color: #006699;
+  text-decoration: none; }
 
 a:hover {
-    border-bottom: solid 4px #fff;
-}
+  border-bottom: solid 4px #fff; }
 
 ul {
-    margin: 0;
-    padding: 0;
-}
+  margin: 0;
+  padding: 0; }
 
 li {
-    text-decoration: none;
-    display: inline;
-    padding-right: 0;
-}
+  text-decoration: none;
+  display: inline;
+  padding-right: 0; }
 
 ul li {
-    display: inline-block;
-}
+  display: inline-block; }
 
 figure {
-    margin: 0 auto;
-    position: relative;
-}
+  margin: 0 auto;
+  position: relative; }
 
 figure img {
-    width: 100%;
-}
+  width: 100%; }
 
 figcaption {
-    font-size: 1.4em;
-    margin: 0 0 0 0;
-    display: block;
-    text-align: center;
-}
+  font-size: 1.4em;
+  margin: 0 0 0 0;
+  display: block;
+  text-align: center; }
 
 figcaption span:hover {
-    border-bottom: 4px solid #006699;
-}
+  border-bottom: 4px solid #006699; }
 
 caption {
-    display: block;
-    padding: 0 0 0 0em;
-    margin: 2em 0 0 0;
-}
+  display: block;
+  padding: 0 0 0 0em;
+  margin: 2em 0 0 0; }
 
 img {
-    margin: 0;
-    padding: 0;
-}
+  margin: 0;
+  padding: 0; }
 
 header {
-    overflow: hidden;
-    position: fixed;
-    z-index: 4000;
-    width: 100%;
-    height: 6.8em;
-    top: 0;
-    background-color: #fff;
-    margin: 0 0 0 0;
-    padding-right: 1.2em;
-    padding-left: 0.8em;
-}
+  overflow: hidden;
+  position: fixed;
+  z-index: 4000;
+  width: 100%;
+  height: 6.8em;
+  top: 0;
+  background-color: #fff;
+  margin: 0 0 0 0;
+  padding-right: 1.2em;
+  padding-left: 0.8em; }
 
 nav {
-    overflow: center;
-}
+  overflow: center; }
 
 footer {
-    background: #006699 50% 0 repeat fixed;
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 8em;
-    margin: 0;
-    clear: both;
-    text-align: center;
-}
+  background: #006699 50% 0 repeat fixed;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 8em;
+  margin: 0;
+  clear: both;
+  text-align: center; }
 
 footer .col3 {
-    padding: 0 0 0 1.2em;
-}
+  padding: 0 0 0 1.2em; }
 
 footer h4 {
-    color: #fff;
-}
+  color: #fff; }
 
 footer h5 {
-    margin: 0.8em 0 0 0;
-}
+  margin: 0.8em 0 0 0; }
 
 footer li {
-    display: inline-block;
-    font-size: 1.4em;
-    line-height: 1.8;
-    padding: 0 1.2em 0 0;
-}
+  display: inline-block;
+  font-size: 1.4em;
+  line-height: 1.8;
+  padding: 0 1.2em 0 0; }
 
 footer a {
-    color: #fff;
-    text-decoration: none;
-}
+  color: #fff;
+  text-decoration: none; }
 
 footer span {
-    display: block;
-    border-top: 2px dotted;
-    padding: 0 0 0 2em;
-}
+  display: block;
+  border-top: 2px dotted;
+  padding: 0 0 0 2em; }
 
-fieldset { 
-    border: none;
-    padding: 4em 0 0 4em;
-    display: block;
-    margin: 0 auto;
-}
+fieldset {
+  border: none;
+  padding: 4em 0 0 4em;
+  display: block;
+  margin: 0 auto; }
 
 form {
-    margin: 0 auto;
-}
+  margin: 0 auto; }
 
 label {
-    width: 32%;
-}
+  width: 32%; }
 
-value {
-    font-family: 
-}
-
-input, textarea, a { 
-    outline: none; 
-}
-
-/****************************************
-
-    Containment Janks
-
-****************************************/
-
-#container {
-    width: 100%;
-}
-
-#home {
-    background: #006699 50% 0 repeat fixed;
-    position: relative;
-    min-height: 600px;
-    margin: 1.8em auto;
-    padding: 0;
-    /* width: 88%; */
-    z-index: 2;
-}
-
-#contentarea {
-    background: #006699 50% 0 repeat fixed;
-    position: relative;
-    min-height: 600px;
-    margin: 0 auto;
-    padding: 0;
-    /* width: 88%; */
-    z-index: 2;
-}
-
-#home a:hover {
-    border: none;
-    text-decoration: none;
-}
-
-
-/****************************************
-
-    Nav Janks
-
-****************************************/
-
-.middle {
-    padding-left: 20%;
-}
-
-
-/* .right {
-    margin: 0 0 0 0;
-    float: left;
-} */
-
-.right {
-    float: right;
-}
-
-.right ul {
-    text-align: right;
-    margin: 0 auto;
-    float: right;
-}
-
-.right li {
-    font-size: 1.2em;
-    display: inline-block;
-    margin: 0 auto;
-    padding: 0.4em 2em 0 0;
-}
-
-.right li a:hover {
-    border-bottom: 4px solid #006699;
-}
-
-.right li:last-of-type {
-    padding: 0 0 0 0;
-}
-
-.last {
-    margin-bottom: 2em;
-}
-
-.line {
-    border-bottom: 8px solid;
-}
-
-/* .line2 {
-    border-bottom: 2px dotted;
-    width: 100%;
-    padding: 0 0 0 0;
-} */
-
-#projects {
-    background: #fff 50% 0 no-repeat;
-    position: absolute;
-    margin: 0 auto;
-    z-index: 400;
-}
-
-
-.work h2 {
-    margin: 0 0 0.2em 0;
-    padding: 0 0 0.12em 0.2em;
-}
-
-#grid {
-    width: 100%;
-    margin: 4em 0 0 0;
-}
-
-.col { /* For Project and Work */
-    width: 33.3333333333333%;
-    height: auto;
-    float: left;
-    display: block;
-    margin: 0 0 2em 0;
-}
-
-.col2 { /* For Project Pages */
-    width: 65%;
-    float: left;
-    padding: 4em 0 0 0;
-}
-
-.col3 {
-    width: 33.3333333333333%;
-    height: auto;
-    float: left;
-    display: block;
-    margin: 2.2em 0 2em 0;
-}
-
-.col4 {
-    width: 65%;
-    display: block;
-    float: left;
-    padding: 12em 6.4em 0 3em;
-}
-
-.col3 h2 {
-    padding: 2.2em 0 0 0.4em;
-    color: #fff;
-}
-
-.col4 p {
-    font-family: 'gt_pressura_mono_regular', monospace;
-    padding: 0 0 0 0;
-    color: #fff;    
-}
-
-.back {
-    font-family: 'FaktPro-SemiBold', sans-serif;
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-}
-
-.end {
-    margin-right: 0;
-}
-
-.buttonleft {
-    width: 50%;
-    height: 2em;
-    display: block;
-    font-size: 4em;
-    float: left;
-}
-
-.buttonright {
-    width: 50%;
-    height: 2em;
-    display: block;
-    font-size: 4em;
-    float: right;
-}
-
-.buttoncenter {
-    width: 100%;
-    height: 2em;
-    display: block;
-    font-size: 4em;
-}
-
-.buttoncenter a {
-    display: block;
-    margin: 0 auto;
-    padding: 0.4em 0 0 0;
-}
-
-.buttoncenter :hover {
-    color: #fff;
-    background-color: #006699;
-    width: 100%;
-    height: 100%;
-}
-
-.buttonleft a {
-    padding: 0.34em 0 0 0;
-    display: block;
-}
-
-.buttonright a {
-    padding: 0.34em 0 0 0;
-    display: block;
-}
-
-
-.buttonleft :hover {
-    color: #fff;
-    background-color: #006699;
-    width: 100%;
-    height: 100%;
-}
-
-.buttonright :hover {
-    color: #fff;
-    background-color: #006699;
-    width: 100%;
-    height: 100%;
-}
-
-.about {
-    width: 98%;
-    margin: 0 auto;
-}
-
-.about-me {
-    position: absolute;
-    top: 4.2em;
-    width: 80%;
-    font-size: 1.6em;
-    color: #fff;
-    padding: 0 0 0 2em;
-    margin: 0;
-}
-
-
-.over {
-    width: 32.8%;
-    padding: 2em
-}
-
-
-.about ul {
-    display: block;
-    clear: both;
-}
-
-.creds {
-    border-bottom: 1.2px dotted;
-}
-
-.title {
-    font-family: 'FaktPro-SemiBold', sans-serif;
-    font-size: 2em;
-    font-weight: bold;
-    padding: 0 0 0 0;
-    margin: 0.2em 0 0 0;
-    line-height: 0.86;
-    text-rendering: optimizeLegibility;
-    display: block;
-    position: fixed;
-    width: 100%;
-    text-align: center;
-}
-
-.title h2 {
-    font-size: 2.2em;
-    margin: 13% 0 0 0;
-    color: #fff;
-}
-
-.title p {
-    font-size: 1em;
-    color: #fff;
-    width: 80%;
-    margin: 0 auto;
-    display: inline-block;
-}
-
-.underline a {
-    color: #fff;
-    border-bottom: 2px solid #fff;
-}
-
-.next li {
-    display: inline-block;
-}
-
-/****************************************
-
-    Form Janks
-
-****************************************/
-
-#formLeft {
-    width: 14%;
-    float: left;
-}
-
-#formLeft textarea {
-    width: 65%;
-    float: right;
-    margin: 
-}
-
-#formRight {
-    width: 65%;
-    float: left;
-    margin: 0 0 0 2%;
-}
-
-#formRight textarea {
-    width: 120%;
-}
-
-
-
-#formRight input {
-    width: 65%;
-    float: left;
-}
-
-.message-bg {
-    display: block;
-}
-
-.input-bg {
-    width: %;
-}
-
-input.submit-button {
-    float: right;
-    background-color: #3399cc;
-    color: #fff;
-    border: none;
-    padding: 1.2em 4em;
-}
-
-
-
-
-/***************
-
- UA Bullshit
-
-****************/
-
-h1 {
-display: block;
--webkit-margin-before: 0em;
--webkit-margin-after: 0em;
--webkit-margin-start: 0px;
--webkit-margin-end: 0px;
-font-weight: bold;
-}
-
-
-
+input, textarea, a {
+  outline: none; }
 
 /* ==========================================================================
-Helper classes
-========================================================================== */
-
-/*
-* Image replacement
-*/
-
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    /* IE 6/7 fallback */
-    *text-indent: -9999px;
-}
-
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
-
-/*
-* Hide from both screenreaders and browsers: h5bp.com/u
-*/
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-/*
-* Hide only visually, but have it available for screenreaders: h5bp.com/v
-*/
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-/*
-* Extends the .visuallyhidden class to allow the element to be focusable
-* when navigated to via the keyboard: h5bp.com/p
-*/
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-/*
-* Hide visually and from screenreaders, but maintain layout
-*/
-
-.invisible {
-    visibility: hidden;
-}
-
-/*
-* Clearfix: contain floats
-*
-* For modern browsers
-* 1. The space content is one way to avoid an Opera bug when the
-* `contenteditable` attribute is included anywhere else in the document.
-* Otherwise it causes space to appear at the top and bottom of elements
-* that receive the `clearfix` class.
-* 2. The use of `table` rather than `block` is only necessary if using
-* `:before` to contain the top-margins of child elements.
-*/
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/*
-* For IE 6/7 only
-* Include this rule to trigger hasLayout and contain floats.
-*/
-
-.clearfix {
-    *zoom: 1;
-}
-
-/* ==========================================================================
-EXAMPLE Media Queries for Responsive Design.
-These examples override the primary ('mobile first') styles.
-Modify as content requires.
-========================================================================== */
-
-@media only screen and (max-width: 800px) {
-    /* Style adjustments for viewports that meet the condition */
-
-    body {
-        background-color: #006699;
-    }
-
-    h1 {
-        font-size: 6em;
-    }
-
-    h2 {
-        padding: 1.2em 0 0 0.2em;
-    }
-
-    caption {
-        padding: 0 0 0 0em;
-        margin: 0 0 0 0;
-    }
-
-    figcaption {
-        font-size: 1.12em;
-    }
-
-    p {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    header {
-        height: 5.2em;
-    }
-
-    footer {
-        margin: 0 0 0 0;
-        height: 17em;
-        text-align: center;
-    }
-
-    footer span {
-        display: block;
-        border-top: none;
-        color: #fff;
-        padding: 0 0 0 2em;
-    }
-
-    nav h4 {
-        font-size: 1.2em;
-        padding: 0.32em 0 0 0;
-
-    }
-
-    .line2 li {
-        /* -right: 0.6em; */
-        font-size: 1.4em;
-        text-align: center;
-        padding: 0.4em 2em 0 0;
-    }
-
-    .title {
-        font-size: 8em;
-        margin: 0.8em 0 1.2em 0;
-        display: block;
-        padding: 0 0 0 0;
-        position: relative;
-
-    }
-
-    .title h2 {
-        font-size: 0.4em;
-        margin: 1.2em 0 0 0;
-    }
-
-    .title p {
-        font-size: 0.14em;
-    }
-
-    #home {
-        width: 20%;
-        display: inline;
-    }
-
-    
-    .col {
-        width: 50%;
-        float: left;
-        padding: 0 0 0 0;
-        margin: 0 0 2em 0;
-        display: block;
-    }
-
-    .right {
-        text-align: center;
-        float: none;
-    }
-
-    .middle {
-        padding-left: 8%;
-    }
-
-    #grid {
-        margin: 0;
-    }
-
-    .col2 {
-        width: 50%;
-        display: block;
-        float: none;
-        padding: 20em 0 0 0;
-    }
-
-    .col3 {
-        width: 75%;
-        float: left;
-        padding: 0 0 2em 0;
-        margin: 2em 2em 0;
-        display: block;
-    }
-
-    .col4 {
-        width: 80%;
-        display: block;
-        float: none;
-        padding: 18em 0 0 0;
-        margin: 0 auto; 
-    }
-
-    .col4 p {
-        margin: 0 0 2em 0;
-    }
-
-    .back {
-        background-color: #fff;
-        height: 20em;
-        font-size: 0.6em;
-        padding: 4em 0 4em 0;
-    }
-
-    .buttonleft {
-        margin: 0 0 0.6em 0;
-        width: 100%;
-        float: left;
-    }
-
-    .buttonright {
-        margin: 0 0 0.6em 0;
-        width: 100%;
-        float: left;
-    }
-
-
-
-    #grid figure img {
-        margin-top: 96px;
-    }
-
-    .about-me {
-        position: relative;
-        top: 2em;
-        font-size: 1.2em;
-        margin: 0 0 4em 0;
-    }
-
-    .work h2 {
-        text-align: center;
-        margin: 0;
-        padding: 0.2em 0 0 0;
-    }
-
-    .over {
-        width: 30%;
-    }
-
-    #formRight {
-        clear: both;
-    }
-
-    #formRight textarea {
-    width: 130%;
-}
-
-
-}
-
-@media only screen and (min-width: 600px) {
-    /* Style adjustments for viewports that meet the condition */
-
-    
-}
-
-@media only screen and (min-width: 480px) {
-    /* Style adjustments for viewports that meet the condition */
-
-    
-}
-
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-Print styles.
-Inlined to avoid required HTTP connection: h5bp.com/r
-========================================================================== */
-
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-* Don't show links for images, or javascript/internal links
-*/
-
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    @page {
-        margin: 0.5cm;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-} 
+   Modules
+   ========================================================================== */
