@@ -135,6 +135,7 @@ nav {
 
 .line {
     border-bottom: 8px solid;
+    margin: 0.4em 0 0 0;
 }
 
 /* .line2 {
@@ -192,10 +193,22 @@ nav {
 /* ==========================================================================
    Title.
    ========================================================================== */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
 .title {
     font-family: $headlines;
     font-size: 2em;
-    font-weight: bold;
     padding: 0 0 0 0;
     margin: 0.2em 0 0 0;
     line-height: 0.86;
@@ -204,12 +217,21 @@ nav {
     position: fixed;
     width: 100%;
     text-align: center;
+    -webkit-animation: fadeInDown 5s infinite; /* Safari 4+ */
+    -moz-animation: fadeInDown 5s infinite; /* Fx 5+ */
+    -o-animation: fadeInDown 5s infinite; /* Opera 12+ */
+    animation: fadeInDown 5s infinite;
 }
 
 .title h2 {
+    display: block;
     font-size: 2.2em;
     margin: 13% 0 0 0;
     color: $white;
+    -webkit-animation: fadeInDown 5s infinite; /* Safari 4+ */
+    -moz-animation: fadeInDown 5s infinite; /* Fx 5+ */
+    -o-animation: fadeInDown 5s infinite; /* Opera 12+ */
+    animation: fadeInDown 5s infinite;
 }
 
 .title p {
@@ -218,6 +240,7 @@ nav {
     width: 80%;
     margin: 0 auto;
     display: inline-block;
+    animation: fadeInDown 2s infinite;
 }
 
 
