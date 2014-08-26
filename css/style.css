@@ -381,6 +381,30 @@ nav {
 /* ==========================================================================
    Title.
    ========================================================================== */
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0); }
+
+  100% {
+    opacity: 1;
+    transform: none; } }
+@-moz-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0); }
+
+  100% {
+    opacity: 1;
+    transform: none; } }
+@-o-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0); }
+
+  100% {
+    opacity: 1;
+    transform: none; } }
 @keyframes fadeInDown {
   0% {
     opacity: 0;
@@ -399,27 +423,20 @@ nav {
   display: block;
   position: fixed;
   width: 100%;
-  text-align: center;
-  -webkit-animation: fadeInDown 5s infinite;
-  /* Safari 4+ */
-  -moz-animation: fadeInDown 5s infinite;
-  /* Fx 5+ */
-  -o-animation: fadeInDown 5s infinite;
-  /* Opera 12+ */
-  animation: fadeInDown 5s infinite; }
+  text-align: center; }
 
 .title h2 {
   display: block;
   font-size: 2.2em;
   margin: 13% 0 0 0;
   color: white;
-  -webkit-animation: fadeInDown 5s infinite;
+  -webkit-animation: fadeInDown 2s infinite;
   /* Safari 4+ */
-  -moz-animation: fadeInDown 5s infinite;
+  -moz-animation: fadeInDown 2s infinite;
   /* Fx 5+ */
-  -o-animation: fadeInDown 5s infinite;
+  -o-animation: fadeInDown 2s infinite;
   /* Opera 12+ */
-  animation: fadeInDown 5s infinite; }
+  animation: fadeInDown 2s infinite; }
 
 .title p {
   font-size: 1em;
@@ -427,6 +444,12 @@ nav {
   width: 80%;
   margin: 0 auto;
   display: inline-block;
+  -webkit-animation: fadeInDown 2s infinite;
+  /* Safari 4+ */
+  -moz-animation: fadeInDown 2s infinite;
+  /* Fx 5+ */
+  -o-animation: fadeInDown 2s infinite;
+  /* Opera 12+ */
   animation: fadeInDown 2s infinite; }
 
 /* ==========================================================================
