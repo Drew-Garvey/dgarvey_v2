@@ -43,11 +43,13 @@ body {
 * Customize the background color to match your design.
 */
 ::-moz-selection {
-  background: #b3d4fc;
+  background-color: white;
+  color: #006699;
   text-shadow: none; }
 
 ::selection {
-  background: #b3d4fc;
+  background-color: white;
+  color: #006699;
   text-shadow: none; }
 
 /*
@@ -372,7 +374,8 @@ nav {
   margin: 0 auto;
   padding: 0;
   /* width: 88%; */
-  z-index: 2; }
+  z-index: 2;
+  overflow: auto; }
 
 #home a:hover {
   border: none;
