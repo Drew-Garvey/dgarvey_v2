@@ -305,11 +305,11 @@ header {
   top: 0;
   background-color: white;
   margin: 0 0 0 0;
-  padding-right: 1.2em;
-  padding-left: 0.8em; }
+  padding: 0 0.8em; }
   @media only screen and (max-width: 800px) {
     header {
-      height: 5.2em; } }
+      height: 5.2em;
+      padding: 0 1.2em; } }
 
 #projects {
   background: white 50% 0 no-repeat;
@@ -340,7 +340,7 @@ nav {
 } */
 .right {
   float: right; }
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 600px) {
     .right {
       text-align: center;
       float: none; } }
@@ -355,6 +355,9 @@ nav {
   display: inline-block;
   margin: 0 auto;
   padding: 0.4em 2em 0 0; }
+  @media only screen and (max-width: 400px) {
+    .right li {
+      padding: 0.4em 1em 0 0; } }
 
 .right li a:hover {
   border-bottom: 4px solid #006699; }
@@ -547,7 +550,7 @@ nav {
   @media screen only and (max-width: 800px) {
     .back {
       background-color: white;
-      height: 20em;
+      /* height: 20em; */
       font-size: 0.6em;
       padding: 0 4em; } }
 

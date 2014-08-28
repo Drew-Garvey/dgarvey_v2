@@ -78,10 +78,10 @@ header {
     top: 0;
     background-color: $white;
     margin: 0 0 0 0;
-    padding-right: 1.2em;
-    padding-left: 0.8em;
+    padding: 0 0.8em;
     @media only screen and (max-width: 800px) {
         height: 5.2em;
+        padding: 0 1.2em;
     }
 }
 
@@ -123,7 +123,7 @@ nav h4 {
 
 .right {
     float: right;
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 600px) {
         text-align: center;
         float: none;
     }
@@ -140,6 +140,9 @@ nav h4 {
     display: inline-block;
     margin: 0 auto;
     padding: 0.4em 2em 0 0;
+    @media only screen and (max-width: 400px) {
+        padding: 0.4em 1em 0 0;
+    }
 }
 
 .right li a:hover {
@@ -363,7 +366,7 @@ nav h4 {
     text-align: center;
     @media screen only and (max-width: 800px) {
         background-color: $white;
-        height: 20em;
+        /* height: 20em; */
         font-size: 0.6em;
         padding: 0 4em;
     }
