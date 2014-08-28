@@ -10,6 +10,12 @@
     }
 }
 
+#grid figure img {
+    @media screen only and (max-width: 800px) {
+        margin-top: 96px
+    }
+}
+
 .col { /* For Project and Work */
     width: 33.3333333333333%;
     height: auto;

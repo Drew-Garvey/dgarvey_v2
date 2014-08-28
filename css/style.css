@@ -164,6 +164,10 @@ p {
     #grid {
       margin: 0; } }
 
+@media screen only and (max-width: 800px) {
+  #grid figure img {
+    margin-top: 96px; } }
+
 .col {
   /* For Project and Work */
   width: 33.3333333333333%;
@@ -303,6 +307,9 @@ header {
   margin: 0 0 0 0;
   padding-right: 1.2em;
   padding-left: 0.8em; }
+  @media only screen and (max-width: 800px) {
+    header {
+      height: 5.2em; } }
 
 #projects {
   background: white 50% 0 no-repeat;
@@ -316,15 +323,16 @@ header {
 nav {
   overflow: center; }
 
-nav h4 {
-  font-size: inherit; }
-  @media only screen and (max-width: 800px) {
-    nav h4 {
-      font-size: 1.2em;
-      padding: 0.32em 0 0 0; } }
+@media only screen and (max-width: 800px) {
+  nav h4 {
+    font-size: 1.2em;
+    padding: 0.32em 0 0 0; } }
 
 .middle {
   padding-left: 20%; }
+  @media only screen and (max-width: 800px) {
+    .middle {
+      padding-left: 8%; } }
 
 /* .right {
     margin: 0 0 0 0;
@@ -332,6 +340,10 @@ nav h4 {
 } */
 .right {
   float: right; }
+  @media only screen and (max-width: 800px) {
+    .right {
+      text-align: center;
+      float: none; } }
 
 .right ul {
   text-align: right;
@@ -371,6 +383,11 @@ nav h4 {
 .work h2 {
   margin: 0 0 0.2em 0;
   padding: 0 0 0.12em 0.2em; }
+  @media screen only and (max-width: 800px) {
+    .work h2 {
+      text-align: center;
+      margin: 0;
+      padding: 0.2em 0 0 0; } }
 
 /* ==========================================================================
    Containment.
@@ -386,6 +403,10 @@ nav h4 {
   padding: 0;
   /* width: 88%; */
   z-index: 2; }
+  @media only screen and (max-width: 800px) {
+    #home {
+      width: 20%;
+      display: inline; } }
 
 #contentarea {
   background: #006699 50% 0 repeat fixed;
@@ -447,6 +468,13 @@ nav h4 {
   position: fixed;
   width: 100%;
   text-align: center; }
+  @media only screen and (max-width: 800px) {
+    .title {
+      font-size: 8em;
+      margin: 0.8em 0 1.2em 0;
+      display: block;
+      padding: 0 0 0 0;
+      position: relative; } }
 
 .title h2 {
   display: block;
@@ -460,6 +488,10 @@ nav h4 {
   -o-animation: fadeInDown 2s;
   /* Opera 12+ */
   animation: fadeInDown 2s; }
+  @media only screen and (max-width: 800px) {
+    .title h2 {
+      font-size: 0.4em;
+      margin: 1.2em 0 0 0; } }
 
 .title p {
   font-size: 1em;
@@ -474,6 +506,9 @@ nav h4 {
   -o-animation: fadeInDown 2s;
   /* Opera 12+ */
   animation: fadeInDown 2s; }
+  @media only screen and (max-width: 800px) {
+    .title p {
+      font-size: 0.14em; } }
 
 /* ==========================================================================
    About Me
@@ -494,6 +529,12 @@ nav h4 {
   color: #fff;
   padding: 0 0 0 2em;
   margin: 0; }
+  @media sceen only and (max-width: 800px) {
+    .about-me {
+      position: relative;
+      top: 2em;
+      font-size: 1.2em;
+      margin: 0 0 4em 0; } }
 
 /* ==========================================================================
    Back Buttons
@@ -503,6 +544,12 @@ nav h4 {
   margin: 0 auto;
   padding: 0;
   text-align: center; }
+  @media screen only and (max-width: 800px) {
+    .back {
+      background-color: white;
+      height: 20em;
+      font-size: 0.6em;
+      padding: 0 4em; } }
 
 .end {
   margin-right: 0; }
@@ -513,6 +560,11 @@ nav h4 {
   display: block;
   font-size: 4em;
   float: left; }
+  @media screen only and (max-width: 800px) {
+    .buttonleft {
+      margin: 0 0 0.6em 0;
+      width: 100%;
+      float: left; } }
 
 .buttonright {
   width: 50%;
@@ -520,6 +572,11 @@ nav h4 {
   display: block;
   font-size: 4em;
   float: right; }
+  @media screen only and (max-width: 800px) {
+    .buttonright {
+      margin: 0 0 0.6em 0;
+      width: 100%;
+      float: left; } }
 
 .buttoncenter {
   width: 100%;
@@ -570,6 +627,11 @@ footer {
   margin: 0;
   clear: both;
   text-align: center; }
+  @media only screen and (max-width: 800px) {
+    footer {
+      margin: 0;
+      height: 17em;
+      text-align: center; } }
 
 footer .col3 {
   padding: 0 0 0 1.2em; }
@@ -594,6 +656,12 @@ footer span {
   display: block;
   border-top: 2px dotted;
   padding: 0 0 0 2em; }
+  @media only screen and (max-width: 800px) {
+    footer span {
+      display: block;
+      border-top: none;
+      color: white;
+      padding: 0 0 0 2em; } }
 
 fieldset {
   border: none;
