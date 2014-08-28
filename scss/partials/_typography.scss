@@ -22,7 +22,9 @@ h1 {
     padding: 0 0 0 0;
     margin: 0 0 0 0;
     line-height: 0.98;
-    
+    @media only screen and (max-width: 800px) {
+        font-size: 6em;
+    }
 }
 
 h2 {
@@ -30,6 +32,9 @@ h2 {
     margin: 0; 
     padding: 0.8em 0 0 0;
     line-height: 0.89;
+    @media only screen and (max-width: 800px) {
+        padding: 1.2em 0 0 0.2em;
+    }
 }
 
 .work h2 {
@@ -63,4 +68,8 @@ p {
     padding: 1.2em 0 0 0;
     line-height: 1.6;
     font-weight: normal;
+    @media only screen and (max-width: 800px) {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
