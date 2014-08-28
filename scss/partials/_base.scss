@@ -197,7 +197,7 @@ nav {
 @-webkit-keyframes fadeInDown {
   0% {
     opacity: 0;
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -20%, 0);
   }
 
   100% {
@@ -209,7 +209,7 @@ nav {
 @-moz-keyframes fadeInDown {
   0% {
     opacity: 0;
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -20%, 0);
   }
 
   100% {
@@ -221,7 +221,7 @@ nav {
 @-o-keyframes fadeInDown {
   0% {
     opacity: 0;
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -20%, 0);
   }
 
   100% {
@@ -233,7 +233,7 @@ nav {
 @keyframes fadeInDown {
   0% {
     opacity: 0;
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -20%, 0);
   }
 
   100% {
@@ -261,10 +261,10 @@ nav {
     font-size: 2.2em;
     margin: 13% 0 0 0;
     color: $white;
-    -webkit-animation: fadeInDown 2s infinite; /* Safari 4+ */
-    -moz-animation: fadeInDown 2s infinite; /* Fx 5+ */
-    -o-animation: fadeInDown 2s infinite; /* Opera 12+ */
-    animation: fadeInDown 2s infinite;
+    -webkit-animation: fadeInDown 2s; /* Safari 4+ */
+    -moz-animation: fadeInDown 2s; /* Fx 5+ */
+    -o-animation: fadeInDown 2s; /* Opera 12+ */
+    animation: fadeInDown 2s;
 }
 
 .title p {
@@ -273,10 +273,10 @@ nav {
     width: 80%;
     margin: 0 auto;
     display: inline-block;
-    -webkit-animation: fadeInDown 2s infinite; /* Safari 4+ */
-    -moz-animation: fadeInDown 2s infinite; /* Fx 5+ */
-    -o-animation: fadeInDown 2s infinite; /* Opera 12+ */
-    animation: fadeInDown 2s infinite;
+    -webkit-animation: fadeInDown 2s; /* Safari 4+ */
+    -moz-animation: fadeInDown 2s; /* Fx 5+ */
+    -o-animation: fadeInDown 2s; /* Opera 12+ */
+    animation: fadeInDown 2s;
 }
 
 
