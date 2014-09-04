@@ -50,11 +50,15 @@
     display: block;
     margin: 2.2em 0 2em 0;
     @media only screen and (max-width: 800px) { 
-		width: 75%;
+		width: 100%;
+        // width: 80%;
         float: left;
-        padding: 0 0 2em 0;
-        margin: 2em 2em 0;
+        // padding: 0 0 2em 0;
+        padding: 0;
+        // margin: 2em 2em 0;
+        margin: 0 auto 3em auto;
         display: block;
+        clear: both;
     }
 }
 
@@ -67,14 +71,22 @@
 		width: 80%;
         display: block;
         float: none;
-        padding: 18em 0 0 0;
-        margin: 0 auto; 
+        font-size: 0.8em;
+        padding: 0;
+        margin: 5em auto; 
+        clear: both;
     }
 }
 
 .col3 h2 {
-    padding: 2.2em 0 0 0.4em;
+    // padding: 2.2em 0 0 0.4em;
+    padding: 2.2em 0 0 0;
+    text-align: center;
     color: #fff;
+    @media only screen and (max-width: 400px) {
+        padding: 2.8em 0 0 0;
+        font-size: 3em;
+    }
 }
 
 .col4 p {

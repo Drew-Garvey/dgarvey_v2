@@ -125,6 +125,11 @@ h2 {
 .work h2 {
   margin: 0 0 0.2em 0;
   padding: 0 0 0.12em 0.2em; }
+  @media only screen and (max-width: 800px) {
+    .work h2 {
+      text-align: center;
+      margin: 0;
+      padding: 0.2em 0 0 0; } }
 
 h3 {
   font-size: 2.6em; }
@@ -203,11 +208,12 @@ p {
   margin: 2.2em 0 2em 0; }
   @media only screen and (max-width: 800px) {
     .col3 {
-      width: 75%;
+      width: 100%;
       float: left;
-      padding: 0 0 2em 0;
-      margin: 2em 2em 0;
-      display: block; } }
+      padding: 0;
+      margin: 0 auto 3em auto;
+      display: block;
+      clear: both; } }
 
 .col4 {
   width: 65%;
@@ -219,12 +225,19 @@ p {
       width: 80%;
       display: block;
       float: none;
-      padding: 18em 0 0 0;
-      margin: 0 auto; } }
+      font-size: 0.8em;
+      padding: 0;
+      margin: 5em auto;
+      clear: both; } }
 
 .col3 h2 {
-  padding: 2.2em 0 0 0.4em;
+  padding: 2.2em 0 0 0;
+  text-align: center;
   color: #fff; }
+  @media only screen and (max-width: 400px) {
+    .col3 h2 {
+      padding: 2.8em 0 0 0;
+      font-size: 3em; } }
 
 .col4 p {
   font-family: "gt_pressura_mono_regular", sans-serif, monospace;
@@ -248,6 +261,9 @@ body {
   color: #006699;
   margin: 0;
   padding: 0; }
+  @media only screen and (max-width: 800px) {
+    body {
+      background-color: #006699; } }
 
 a {
   color: #006699;
@@ -383,15 +399,6 @@ nav {
   margin: 0 auto;
   z-index: 400; }
 
-.work h2 {
-  margin: 0 0 0.2em 0;
-  padding: 0 0 0.12em 0.2em; }
-  @media screen only and (max-width: 800px) {
-    .work h2 {
-      text-align: center;
-      margin: 0;
-      padding: 0.2em 0 0 0; } }
-
 /* ==========================================================================
    Containment.
    ========================================================================== */
@@ -502,6 +509,7 @@ nav {
   width: 80%;
   margin: 0 auto;
   display: inline-block;
+  max-width: 960px;
   -webkit-animation: fadeInDown 2s;
   /* Safari 4+ */
   -moz-animation: fadeInDown 2s;
@@ -512,6 +520,10 @@ nav {
   @media only screen and (max-width: 800px) {
     .title p {
       font-size: 0.14em; } }
+
+.underline a {
+  color: #fff;
+  border-bottom: 2px solid #fff; }
 
 /* ==========================================================================
    About Me
@@ -532,11 +544,11 @@ nav {
   color: #fff;
   padding: 0 0 0 2em;
   margin: 0; }
-  @media sceen only and (max-width: 800px) {
+  @media only screen and (max-width: 800px) {
     .about-me {
       position: relative;
       top: 2em;
-      font-size: 1.2em;
+      font-size: 0.8em;
       margin: 0 0 4em 0; } }
 
 /* ==========================================================================
@@ -547,7 +559,7 @@ nav {
   margin: 0 auto;
   padding: 0;
   text-align: center; }
-  @media screen only and (max-width: 800px) {
+  @media only screen and (max-width: 800px) {
     .back {
       background-color: white;
       /* height: 20em; */
@@ -563,7 +575,7 @@ nav {
   display: block;
   font-size: 4em;
   float: left; }
-  @media screen only and (max-width: 800px) {
+  @media only screen and (max-width: 800px) {
     .buttonleft {
       margin: 0 0 0.6em 0;
       width: 100%;
@@ -575,7 +587,7 @@ nav {
   display: block;
   font-size: 4em;
   float: right; }
-  @media screen only and (max-width: 800px) {
+  @media only screen and (max-width: 800px) {
     .buttonright {
       margin: 0 0 0.6em 0;
       width: 100%;
@@ -635,9 +647,6 @@ footer {
       margin: 0;
       height: 17em;
       text-align: center; } }
-
-footer .col3 {
-  padding: 0 0 0 1.2em; }
 
 footer h4 {
   color: white; }

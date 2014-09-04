@@ -8,6 +8,9 @@ body {
     color: $brand_blue;
     margin: 0;
     padding: 0;
+    @media only screen and (max-width: 800px) {
+        background-color: $brand_blue;
+    }
 }
 
 
@@ -176,16 +179,6 @@ nav h4 {
 }
 
 
-.work h2 {
-    margin: 0 0 0.2em 0;
-    padding: 0 0 0.12em 0.2em;
-    @media screen only and (max-width: 800px) {
-        text-align: center;
-        margin: 0;
-        padding: 0.2em 0 0 0;
-    }
-}
-
 /* ==========================================================================
    Containment.
    ========================================================================== */
@@ -317,6 +310,7 @@ nav h4 {
     width: 80%;
     margin: 0 auto;
     display: inline-block;
+    max-width: 960px;
     -webkit-animation: fadeInDown 2s; /* Safari 4+ */
     -moz-animation: fadeInDown 2s; /* Fx 5+ */
     -o-animation: fadeInDown 2s; /* Opera 12+ */
@@ -324,6 +318,11 @@ nav h4 {
     @media only screen and (max-width: 800px) {
         font-size: 0.14em;
     }
+}
+
+.underline a {
+    color: #fff;
+    border-bottom: 2px solid #fff;
 }
 
 
@@ -348,10 +347,10 @@ nav h4 {
     color: #fff;
     padding: 0 0 0 2em;
     margin: 0;
-    @media sceen only and (max-width: 800px) {
+    @media only screen and (max-width: 800px) {
         position: relative;
         top: 2em;
-        font-size: 1.2em;
+        font-size: 0.8em;
         margin: 0 0 4em 0;
     }
 }
@@ -364,7 +363,7 @@ nav h4 {
     margin: 0 auto;
     padding: 0;
     text-align: center;
-    @media screen only and (max-width: 800px) {
+    @media only screen and (max-width: 800px) {
         background-color: $white;
         /* height: 20em; */
         font-size: 0.6em;
@@ -382,7 +381,7 @@ nav h4 {
     display: block;
     font-size: 4em;
     float: left;
-    @media screen only and (max-width: 800px) {
+    @media only screen and (max-width: 800px) {
         margin: 0 0 0.6em 0;
         width: 100%;
         float: left;
@@ -395,7 +394,7 @@ nav h4 {
     display: block;
     font-size: 4em;
     float: right;
-    @media screen only and (max-width: 800px) {
+    @media only screen and (max-width: 800px) {
         margin: 0 0 0.6em 0;
         width: 100%;
         float: left;
@@ -468,7 +467,7 @@ footer {
 }
 
 footer .col3 {
-    padding: 0 0 0 1.2em;
+    // padding: 0 0 0 1.2em;
 }
 
 footer h4 {
