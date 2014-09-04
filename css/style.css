@@ -544,12 +544,22 @@ nav {
   color: #fff;
   padding: 0 0 0 2em;
   margin: 0; }
+  @media only screen and (max-width: 1024px) {
+    .about-me {
+      font-size: 1.2em;
+      width: 92%; } }
   @media only screen and (max-width: 800px) {
     .about-me {
       position: relative;
       top: 2em;
+      width: 100%;
       font-size: 0.8em;
-      margin: 0 0 4em 0; } }
+      margin: 0;
+      padding: 0 2em 0 2em; } }
+
+@media only screen and (max-width: 800px) {
+  .about-me p:last-of-type {
+    padding: 0 0 4em 0; } }
 
 /* ==========================================================================
    Back Buttons
@@ -644,7 +654,7 @@ footer {
   text-align: center; }
   @media only screen and (max-width: 800px) {
     footer {
-      margin: 0;
+      margin: 2em 0 0 0;
       height: 17em;
       text-align: center; } }
 
@@ -659,6 +669,9 @@ footer li {
   font-size: 1.4em;
   line-height: 1.8;
   padding: 0 1.2em 0 0; }
+
+footer li:last-of-type {
+  padding: 0; }
 
 footer a {
   color: white;
