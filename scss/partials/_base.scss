@@ -363,11 +363,12 @@ nav h4 {
     margin: 0 auto;
     padding: 0;
     text-align: center;
+    overflow: auto;
     @media only screen and (max-width: 800px) {
         background-color: $white;
         /* height: 20em; */
         font-size: 0.6em;
-        padding: 0 4em;
+        // padding: 0 4em;
     }
 }
 
