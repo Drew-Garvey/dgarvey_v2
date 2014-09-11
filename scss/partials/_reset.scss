@@ -40,6 +40,12 @@ body {
 * Customize the background color to match your design.
 */
 
+::-webkit-selection {
+    background-color: $white;
+    color: $brand_blue;
+    text-shadow: none;
+}
+
 ::-moz-selection {
     background-color: $white;
     color: $brand_blue;

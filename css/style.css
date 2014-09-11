@@ -42,6 +42,11 @@ body {
 * These selection rule sets have to be separate.
 * Customize the background color to match your design.
 */
+::-webkit-selection {
+  background-color: white;
+  color: #006699;
+  text-shadow: none; }
+
 ::-moz-selection {
   background-color: white;
   color: #006699;
