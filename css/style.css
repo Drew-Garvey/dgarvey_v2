@@ -72,7 +72,8 @@ hr {
 * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
 */
 img {
-  vertical-align: middle; }
+  vertical-align: middle;
+  border: none; }
 
 /*
 * Remove default fieldset styles.
@@ -272,7 +273,8 @@ body {
 
 a {
   color: #006699;
-  text-decoration: none; }
+  text-decoration: none;
+  border: 0px; }
 
 a:hover {
   border-bottom: solid 4px white; }
@@ -294,7 +296,8 @@ figure {
   position: relative; }
 
 figure img {
-  width: 100%; }
+  width: 100%;
+  border: 0px; }
 
 figcaption {
   font-size: 1.4em;
@@ -313,9 +316,13 @@ caption {
   padding: 0 0 0 0em;
   margin: 2em 0 0 0; }
 
+a img {
+  border: 0px; }
+
 img {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  border: 0px; }
 
 header {
   overflow: hidden;
