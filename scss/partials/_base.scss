@@ -17,6 +17,7 @@ body {
 a {
     color: #006699;
     text-decoration: none;
+    border: 0px;
 } 
 
 a:hover {
@@ -67,9 +68,14 @@ caption {
     margin: 2em 0 0 0;
 }
 
+a img {
+    border: 0px;
+}
+
 img {
     margin: 0;
     padding: 0;
+    border : 0px;
 }
 
 header {
