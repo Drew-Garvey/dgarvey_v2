@@ -354,7 +354,8 @@ nav {
 @media only screen and (max-width: 800px) {
   nav h4 {
     font-size: 1.2em;
-    padding: 0.32em 0 0 0; } }
+    padding: 0.32em 0 0 0;
+    margin: 0; } }
 
 .middle {
   padding-left: 20%; }
