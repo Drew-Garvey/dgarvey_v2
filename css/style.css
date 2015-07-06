@@ -501,8 +501,8 @@ nav {
 
 .title h2 {
   display: block;
-  font-size: 2.2em;
-  margin: 13% 0 0 0;
+  font-size: 4.2em;
+  margin: 6% 0 0 0;
   color: white;
   -webkit-animation: fadeInDown 2s;
   /* Safari 4+ */
@@ -521,6 +521,7 @@ nav {
   color: white;
   width: 80%;
   margin: 0 auto;
+  padding-top: 0.8em !important;
   display: inline-block;
   max-width: 960px;
   -webkit-animation: fadeInDown 2s;
