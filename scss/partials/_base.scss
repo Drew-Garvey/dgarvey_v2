@@ -299,7 +299,7 @@ nav h4 {
 
 .title h2 {
     display: block;
-    font-size: 4.2em;
+    font-size: 5.2em;
     margin: 6% 0 0 0;
     color: $white;
     -webkit-animation: fadeInDown 2s; /* Safari 4+ */
@@ -324,6 +324,8 @@ nav h4 {
     -moz-animation: fadeInDown 2s; /* Fx 5+ */
     -o-animation: fadeInDown 2s; /* Opera 12+ */
     animation: fadeInDown 2s;
+    text-rendering: optimizeLegibility;
+    font-weight: normal;
     @media only screen and (max-width: 800px) {
         font-size: 0.14em;
     }
